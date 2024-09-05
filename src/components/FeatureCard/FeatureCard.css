@@ -1,0 +1,13 @@
+.feature-card{
+    border: none;
+    box-shadow: 0 0 10px 0 #abd1c6;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #001e1d;
+    margin-bottom:30px ;
+}
+.feature-img{
+    height: 150px;
+}

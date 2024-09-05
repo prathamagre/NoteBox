@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {createBrowserRouter, RouterProvider, UNSAFE_ErrorResponseImpl} from 'react-router-dom'
-  import Home from './views/Home/home'
-  import Add from './views/Add/add' 
-  import Show from './views/Show/show'
+import { createBrowserRouter, RouterProvider, UNSAFE_ErrorResponseImpl } from 'react-router-dom'
+import Home from './views/Home/home'
+import Add from './views/Add/add'
+import Show from './views/Show/show'
+import { Toaster } from 'react-hot-toast';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,15 +13,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>
+    element: <Home />
   },
   {
     path: "/add",
-    element: <Add/>
+    element: <Add />
   },
   {
     path: "/show",
-    element: <Show/>
+    element: <Show />
   },
   {
     path: "*",
@@ -29,5 +30,8 @@ const router = createBrowserRouter([
 ])
 
 root.render(
-    <RouterProvider router={router}/>
+  <div>
+    <RouterProvider router={router} />
+    <Toaster />
+  </div>
 );

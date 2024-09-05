@@ -10,33 +10,34 @@ function home() {
     return (
         <div>
             <div class="secondary">
-                <h1 class="text-center highlight"><u>Note Box</u></h1>
-                <p class="text-center text">
+                <h1 className="text-center highlight"><u>Note Box</u></h1>
+                <p className="text-center text">
                     "Your Organized Space for Every Thought"
                 </p>
             </div>
-            <div class="content">
+            <div className="content">
                 <div>
-                    <img class="home-img" src={HomeImg} alt="img" />
+                    <img className="home-img" src={HomeImg} alt="img" />
                 </div>
-                <div>
-                    <p class="text text-center content-txt">
+                <div className="description">
+                    <p className="text text-center content-txt">
                         Note Box is a simple yet powerful note-taking app designed to effortlessly capture, organize, and manage your ideas. Whether it is quick thoughts, to-do lists, or detailed notes, everything stays neatly stored and accessible. With intuitive features and a clean interface, Note Box is your go-to space for inspiration and tasks—always ready when you need it.</p>
-                    <p class="text text-center ">
+                    <p className="text text-center ">
                         <b>Start making notes by clicking here...</b>
                     </p>
                     <div class="btn-container">
-                        <button class="action-btn">Add Task</button>
-                        <button class="action-btn">Show Task</button>
+                        <button className="action-btn">Add Note</button>
+                        <button className="action-btn">Show Note</button>
                     </div>
                 </div>
             </div>
+            <hr></hr>
             <div>
-                <h3 class="text-center highlight">
+                <h3 className="text-center highlight">
                     Key features
                 </h3>
 
-                <div class="feature-container">
+                <div className="feature-container">
                     <FeatureCard
                         featureImg={TimeImg}
                         featureText={
@@ -52,7 +53,7 @@ function home() {
                     <FeatureCard
                         featureImg={InterfaceImg}
                         featureText={
-                            <div dangerouslySetInnerHTML={{ __html: `<b>Clean Interface</b><br/>A simple, intuitive design that keeps you focused on your notes.` }} />
+                            <div dangerouslySetInnerHTML={{ __html: `<b>Clean Interface</b><br/>A simple design that keeps you focused on your notes.` }} />
                         }
                     />
                 </div>

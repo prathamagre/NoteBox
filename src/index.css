@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap');
 
 body {
-  margin: 10px;
+  margin: 0px;
   padding: 10px;
   background-color: #004643;
 }
@@ -33,12 +33,16 @@ body {
   background-color: #f9bc60;
   color: #001e1d;
   height: 40px;
+  width: 150px;
   font-size: 23px;
   padding: 5px 20px;
   border-radius: 10px;
   font-family: "Dancing Script", cursive;
   font-weight:bolder;
   cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px 0 #abd1c6;
+  margin: 10px;
 }
 
 .action-btn:hover{

@@ -97,7 +97,7 @@ function Add() {
           type="button"
           onClick={addNote}
           className="action-btn add-action-btn">
-          +Add Note
+          Add Note
         </button>
       </div>
       <HomeButton />

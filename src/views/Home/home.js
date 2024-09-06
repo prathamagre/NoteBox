@@ -1,9 +1,9 @@
 import React from 'react'
 import './home.css'
 import HomeImg from './home-illus.png'
-import TimeImg from './../../img/time.png'
-import StorageImg from './../../img/storage.png'
-import InterfaceImg from './../../img/interface.png'
+import TimeImg from './../../views/Home/home-imgs/time.png'
+import StorageImg from './../../views/Home/home-imgs/storage.png'
+import InterfaceImg from './../../views/Home/home-imgs/interface.png'
 import FeatureCard from './../../components/FeatureCard/FeatureCard'
 import { Link } from 'react-router-dom'
 

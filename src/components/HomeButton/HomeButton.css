@@ -1,7 +1,13 @@
 .homebtn-img{
-    height: 65px;
-    margin: 10px;
+    height: 60px;
+    margin: 0 20px;
     cursor: pointer;
+    
+}
+
+.homebtn-img:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 
 @media screen and (max-width:500px){

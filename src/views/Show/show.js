@@ -6,7 +6,7 @@ function show() {
   return (
     <div>
     <div className="secondary">
-      <h2 className="text-center highlight">🧾Show Note</h2>
+      <h2 className="text-center highlight">🧾Show Note</h2><hr></hr>
     </div>
     <HomeButton/>
     </div>

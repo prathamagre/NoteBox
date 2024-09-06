@@ -15,9 +15,9 @@
 @media screen and (max-width:500px){
     .homebtn-img{
         position: fixed;
-        top: 88vh;
+        top: 80vh;
         left: 38vh;
         margin: 10px;
-        height: 58px;
+        height: 56px;
     }
 }

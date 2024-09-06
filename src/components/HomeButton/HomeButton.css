@@ -1,0 +1,14 @@
+.homebtn-img{
+    height: 65px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px){
+    .homebtn-img{
+        position: fixed;
+        bottom: 8px;
+        right: 8px;
+        height: 55px;
+    }
+}

@@ -2,7 +2,7 @@
 
 body {
   margin: 0px;
-  padding: 10px;
+  padding: 5.5px;
   background-color: #004643;
 }
 
@@ -20,7 +20,7 @@ body {
 
 .secondary{
   background-color: #001e1d ;
-  padding: 2px;
+  padding: 0px;
   border-radius: 10px;
 }
 
@@ -33,7 +33,7 @@ body {
   background-color: #f9bc60;
   color: #001e1d;
   height: 40px;
-  width: 150px;
+  width: 200px;
   font-size: 23px;
   padding: 5px 20px;
   border-radius: 10px;
@@ -52,6 +52,9 @@ body {
 @media screen and (max-width:500px) {
   .action-btn{
     margin-left: 0px;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
   }
   .highlight{
     font-size: 50px;

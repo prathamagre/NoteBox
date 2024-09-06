@@ -10,11 +10,11 @@ import { Link } from 'react-router-dom'
 function home() {
     return (
         <div>
-            <div class="secondary">
+            <div className="secondary">
                 <h1 className="text-center highlight"><u>Note Box</u></h1>
                 <p className="text-center text">
                     "Your Organized Space for Every Thought"
-                </p>
+                </p><hr></hr>
             </div>
             <div className="content">
                 <div>
@@ -28,10 +28,10 @@ function home() {
                     </p>
                     <div class="btn-container">
                         <Link to={"/add"}>
-                        <button className="action-btn">Add Note</button>
+                        <button className="action-btn">📝Add Note</button>
                         </Link>
                         <Link to={"/show"}>
-                        <button className="action-btn">Show Note</button>
+                        <button className="action-btn">🧾Show Note</button>
                         </Link>
                     </div>
                 </div>

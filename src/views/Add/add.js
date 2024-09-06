@@ -1,9 +1,15 @@
 import React from 'react'
 import './add.css'
+import HomeButton from '../../components/HomeButton/HomeButton'
 
 function add() {
   return (
-    <div>add</div>
+    <div>
+    <div className="secondary">
+      <h2 className="text-center highlight">📝Add Note</h2>
+    </div>
+    <HomeButton/>
+    </div>
   )
 }
 

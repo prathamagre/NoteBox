@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './add.css'
 import HomeButton from '../../components/HomeButton/HomeButton'
 import EmojiPicker, { Emoji } from 'emoji-picker-react';
+import toast, { Toaster } from 'react-hot-toast';
 
 function Add() {
   const [title, setTitle] = useState("");
@@ -10,73 +11,95 @@ function Add() {
   const [emoji, setEmoji] = useState("");
   const [openEmojiDialog, setOpenEmojiDialog] = useState(false);
 
+  const addNote = () => {
+    const notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+    const noteObject = {
+      title,
+      decription,
+      category,
+      emoji,
+    };
+
+    notes.push(noteObject);
+
+    localStorage.setItem("notes", JSON.stringify(notes));
+
+    toast.success("Note added succesfully!");
+
+    setTitle("");
+    setCategory("");
+    setDescription("");
+    setEmoji("");
+  };
+
   return (
     <div>
       <div className="secondary">
         <h2 className="text-center highlight">📝Add Note</h2><hr></hr>
       </div>
+      <div className="user-input-container">
+        <input
+          type="text"
+          placeholder="Title"
+          value={title}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setTitle(e.target.value);
+          }}
+          className="user-input"
+        />
 
-      <input
-        type="text"
-        placeholder="Title"
-        value={title}
-        onChange={(e) => {
-          console.log(e.target.value);
-          setTitle(e.target.value);
-        }}
-        className="user-input"
-      />
+        <input
+          type="text"
+          placeholder="Description"
+          value={decription}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setDescription(e.target.value);
+          }}
+          className="user-input"
+        />
 
-      <input
-        type="text"
-        placeholder="Description"
-        value={decription}
-        onChange={(e) => {
-          console.log(e.target.value);
-          setDescription(e.target.value);
-        }}
-        className="user-input"
-      />
+        <select className="user-input user-input-category"
+          value={category}
+          onChange={(e) => {
+            console.log(e.target.value);
+            setCategory(e.target.value);
+          }}
+        >
+          <option value="">Category</option>
+          <option value="shopping">Shopping</option>
+          <option value="health">Health</option>
+          <option value="learning">Learning</option>
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+        </select>
 
-      <select className="user-input user-input-category">
-        <option>category</option>
-        <option value="shopping">Shopping</option>
-        <option value="health">Health</option>
-        <option value="learning">Learning</option>
-        <option value="personal">Personal</option>
-        <option value="work">Work</option>
-      </select>
+        <div className="user-input" onClick={() => setOpenEmojiDialog(true)}
+        >
+          {emoji ? emoji : "Select Emoji"}
+        </div>
 
-      <div className="user-input" onClick={() => setOpenEmojiDialog(true)}
-       >
-        {emoji? emoji:"Select Emoji"}
-      </div>
-
-      <EmojiPicker
+        <EmojiPicker
           open={openEmojiDialog}
-          height={"400px"}
+          height={"350px"}
+          width={""}
           Theme={"dark"}
           onEmojiClick={(emojiObject) => {
             setEmoji(emojiObject.emoji)
             setOpenEmojiDialog(false)
           }}
-          className="emoji-picker"/>
+          className="emoji-picker" />
 
-      <div className="addpge-btn-container">
+
         <button
           type="button"
-          onClick={() => {
-            setTitle("");
-            setCategory("");
-            setDescription("");
-            setEmoji("");
-          }}
-          className="action-btn">
-          Add Note
+          onClick={addNote}
+          className="action-btn add-action-btn">
+          +Add Note
         </button>
-        
       </div>
-
       <HomeButton />
     </div>
   );

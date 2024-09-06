@@ -1,9 +1,8 @@
 .homebtn-img{
-    height: 60px;
+    height: 50px;
     margin: 0 20px;
     cursor: pointer;
-    top: 30px;
-    left: 10px;
+    top: 110px;
     position: fixed;
     
 }
@@ -16,9 +15,9 @@
 @media screen and (max-width:500px){
     .homebtn-img{
         position: fixed;
-        bottom: 8px;
-        right: 8px;
+        top: 88vh;
+        left: 38vh;
         margin: 10px;
-        height: 55px;
+        height: 58px;
     }
 }

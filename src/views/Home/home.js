@@ -24,7 +24,7 @@ function home() {
                     <p className="text text-center content-txt">
                         Note Box is a simple yet powerful note-taking app designed to effortlessly capture, organize, and manage your ideas. <span className="content-part">Whether it is quick thoughts, to-do lists, or detailed notes, everything stays neatly stored and accessible. With intuitive features and a clean interface, Note Box is your go-to space for inspiration and tasks—always ready when you need it.</span></p>
                     <p className="text text-center ">
-                        <b>Start making notes by clicking here...</b>
+                        <b>Start making notes now!!</b>
                     </p>
                     <div class="btn-container">
                         <Link to={"/add"}>

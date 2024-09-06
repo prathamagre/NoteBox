@@ -1,0 +1,134 @@
+.note-card {
+    display: flex;
+    align-items: center;
+    background-color: #abd1c6;
+    margin: 20px 70px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #abd1c6;
+    position: relative;
+}
+
+.note-card-emoji {
+    font-size: 50px;
+    margin-right: 30px;
+}
+
+.note-card-title {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.note-card-description {
+    margin: 0;
+    margin-top: -30px;
+}
+
+.note-card-category {
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+    min-width: 70px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.note-category-emoji {
+    font-size: 15px;
+    margin-right: 3px;
+}
+
+.bg-shopping {
+    background-color: #6829a8;
+    color: aliceblue;
+}
+
+.bg-learning {
+    background-color: #6699ff;
+}
+
+.bg-health {
+    background-color: #00cc66;
+}
+
+.bg-personal {
+    background-color: #ffcc00;
+}
+
+.bg-work {
+    background-color: #fa3737;
+    color: aliceblue;
+}
+
+.del-img {
+    height: 25px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .note-card {
+        margin: 20px 20px;
+    }
+
+    .note-card-emoji {
+        margin-right: 10px;
+        font-size: 30px;
+        margin-right: 5px;
+    }
+
+
+    .note-card-title {
+        margin-bottom: 7px;
+    }
+
+    .note-category-emoji {
+        font-size: 15px;
+    }
+
+    .note-card-category {
+        position: absolute;
+        bottom: 3px;
+        right: 5px;
+        min-width: 70px;
+        background-color: white;
+        text-align: center;
+        border-radius: 7px;
+        padding: 3px;
+    }
+
+    .bg-shopping {
+        background-color: #6829a8;
+        color: aliceblue;
+    }
+
+    .bg-learning {
+        background-color: #6699ff;
+    }
+
+    .bg-health {
+        background-color: #00cc66;
+    }
+
+    .bg-personal {
+        background-color: #ffcc00;
+    }
+
+    .bg-work {
+        background-color: #fa3737;
+        color: aliceblue;
+    }
+    .del-img {
+        height: 20px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+
+}

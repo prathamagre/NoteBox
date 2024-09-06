@@ -6,7 +6,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function Add() {
   const [title, setTitle] = useState("");
-  const [decription, setDescription] = useState("");
+  const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
   const [emoji, setEmoji] = useState("");
   const [openEmojiDialog, setOpenEmojiDialog] = useState(false);
@@ -16,7 +16,7 @@ function Add() {
 
     const noteObject = {
       title,
-      decription,
+      description,
       category,
       emoji,
     };
@@ -44,7 +44,6 @@ function Add() {
           placeholder="Title"
           value={title}
           onChange={(e) => {
-            console.log(e.target.value);
             setTitle(e.target.value);
           }}
           className="user-input"
@@ -53,18 +52,15 @@ function Add() {
         <input
           type="text"
           placeholder="Description"
-          value={decription}
+          value={description}
           onChange={(e) => {
-            console.log(e.target.value);
-            setDescription(e.target.value);
-          }}
+            setDescription(e.target.value)}}
           className="user-input"
         />
 
         <select className="user-input user-input-category"
           value={category}
           onChange={(e) => {
-            console.log(e.target.value);
             setCategory(e.target.value);
           }}
         >

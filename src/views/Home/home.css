@@ -60,11 +60,11 @@ h1{
         flex-wrap: wrap;
     }
     .home-img{
-        height: 250px;
-        margin-left: 50px;
+        height: 200px;
+        margin-left: 70px;
     }
     .content-txt{
-        margin: 20px;
+        margin: 2px;
         font-size: 20px;
         margin-bottom: 0;
     }

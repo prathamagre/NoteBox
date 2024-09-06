@@ -44,7 +44,7 @@ hr{
     padding: 20px;
     align-items: center;
     border-radius: 10px;
-    margin: 10px;
+    margin: 5px;
     padding-top: 45px;
 }
 
@@ -55,7 +55,8 @@ hr{
         flex-wrap: wrap;
     }
     .home-img{
-        height: 300px;
+        height: 250px;
+        margin-left: 50px;
     }
     .content-txt{
         margin: 20px;
@@ -79,6 +80,9 @@ hr{
     }
     .btn-container{
         margin-top: 10px;
+        position: fixed;
+        bottom: 70px;
+        height: 10px;
     }
     h1{
         height: 50px;

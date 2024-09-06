@@ -5,6 +5,7 @@ import TimeImg from './../../img/time.png'
 import StorageImg from './../../img/storage.png'
 import InterfaceImg from './../../img/interface.png'
 import FeatureCard from './../../components/FeatureCard/FeatureCard'
+import { Link } from 'react-router-dom'
 
 function home() {
     return (
@@ -26,8 +27,12 @@ function home() {
                         <b>Start making notes by clicking here...</b>
                     </p>
                     <div class="btn-container">
+                        <Link to={"/add"}>
                         <button className="action-btn">Add Note</button>
+                        </Link>
+                        <Link to={"/show"}>
                         <button className="action-btn">Show Note</button>
+                        </Link>
                     </div>
                 </div>
             </div>

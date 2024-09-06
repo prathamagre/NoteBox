@@ -51,4 +51,4 @@ function NodeCard({index, title, description, category, emoji}) {
   )
 }
 
-export default NodeCard
+export default NodeCard;

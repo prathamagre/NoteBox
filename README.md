@@ -17,8 +17,10 @@
 ## Screenshots:
 1. **Home Screen:**
 ![Home Screen](./home1-ss.png.png)
-2. **Add note Screen:**(./home1-ss.png.png)
-3. **Show note Screen:**(./home1-ss.png.png)
+2. **Add note Screen:**
+![Add Screen](.add-ss.png.png)
+3. **Show note Screen:**
+![Show Screen](./show-ss.png.png)
 
 ## Clone the repository:
 

@@ -12,6 +12,12 @@ function Show() {
 
   },[]);
 
+  const handleDelete = (index) => {
+    const updatedNotes = notes.filter((_, i) => i !== index);
+    localStorage.setItem("notes", JSON.stringify(updatedNotes));
+    setNotes(updatedNotes);
+  };
+
 
   return (
     <div>
@@ -28,7 +34,8 @@ function Show() {
             title={title}
             description={description}
             category={category} 
-            emoji={emoji}/>
+            emoji={emoji}
+            onDelete={handleDelete}/>
         )
       })
     }
@@ -38,4 +45,4 @@ function Show() {
     )
 }
 
-export default Show
+export default Show;

@@ -31,7 +31,7 @@ function NoteCategory({category}){
     )
 }
 
-function NodeCard({index, title, description, category, emoji}) {
+function NodeCard({index, title, description, category, emoji, onDelete}) {
   return (
     <div className="note-card">
         <div className="note-card-emoji">{emoji}
@@ -44,7 +44,7 @@ function NodeCard({index, title, description, category, emoji}) {
             src={DeleteImg}
             className="del-img"
             onClick={()=>{
-                deleteNote(index);
+                onDelete(index);
             }}/>
         </div>
     </div>

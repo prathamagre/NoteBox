@@ -14,7 +14,7 @@
 - **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
 ## Screenshots:
-1. **Home Screen:**(./home1-ss.png.png)
+1. **Home Screen:**(./home1-ss.png)
 2. **Add note Screen:**(./home1-ss.png.png)
 3. **Show note Screen:**(./home1-ss.png.png)
 

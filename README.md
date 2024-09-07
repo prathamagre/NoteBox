@@ -2,7 +2,8 @@
 
 **Note Box** is a simple and user-friendly note-taking application that allows you to easily capture, organize, and manage your notes. With a clean interface and intuitive features, Note Box helps you keep track of your thoughts, tasks, and ideas effortlessly.
 
-![Home Screen](./home1-ss.png.png)(./home2-ss.png.png)
+![Home Screen](./home1-ss.png.png)
+![Home Screen](./home2-ss.png.png)
 *Home Screen*
 
 ## Features
